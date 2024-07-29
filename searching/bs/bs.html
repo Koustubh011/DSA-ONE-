@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Bubble Sort Visualization</title>
+  <link rel="stylesheet" href="/sortstyles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  <ul class="navbar">
+    <li><a href="/index.html"><i class="fa fa-home"></i></a></li>
+    <li>
+      <a href="#">Sorting</a>
+      <ul class="drp">
+        <li><a href="/sorting/bubble/bubble-sort.html">Bubble Sort</a></li>
+        <li><a href="/sorting/selection/selection-sort.html">Selection Sort</a></li>
+        <li><a href="/sorting/shell/shell-sort.html">Shell Sort</a></li>
+        <li><a href="/sorting/merge/merge-sort.html">Merge Sort</a></li>
+        <li><a href="/sorting/quick/quick-sort.html">Quick Sort</a></li>
+        <li><a id="last" href="/sorting/insertion/insertion-sort.html">Insertion Sort</a></li>
+      </ul>
+    </li>
+    <li><a href="/stack/index.html">Stack</a></li>
+    <li><a href="/queue/index.html">Queue</a></li>
+  </ul>
+  <h1 class="header">Binary Search - Visualization</h1>
+  <div style="display: flex;">
+    <div id="container"></div>
+    <div class="data">
+      <table>
+        <tr>
+          <th>*</th>
+          <th>Worst Case</th>
+          <th>Average Case</th>
+          <th>Best Case</th>
+        </tr>
+        <tr>
+          <td>Time Complexity</td>
+          <td>0(n<sup>2</sup>)</td>
+          <td>0(n<sup>2</sup>)</td>
+          <td>0(n)</td>
+        </tr>
+        <tr>
+          <td>Space Complexity</td>
+          <td>0(1)</td>
+          <td>0(1)</td>
+          <td>0(1)</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+  <div id="sort-comp" style="display: flex; width: min-content;align-content: baseline;margin: -40px auto;">
+    <button id="sortt" onclick="sort()">Sort</button>
+    <div id="output">Comparisions</div>
+    <button onclick="downloadJavaFile()" id="download-button">Download Java Code</button>
+
+  </div>
+  <br>
+
+  <div style="display: flex;">
+
+    <div class="data adv-disadv">
+      <p style="font-size: larger; line-height: normal; margin: 0 0 ; font-weight: bold;">Advantages</p>
+      <ul>
+
+        <li>Easy to understand and implement</li>
+        <li>No additional memory space required</li>
+        <li>Adaptable to different data types</li>
+        <li>Maintains relative order of elements (stable sorting)</li>
+
+      </ul>
+
+    </div>
+
+    <div class="data adv-disadv">
+      <p style="font-size: larger; line-height: normal; margin: 0 0 ; font-weight: bold;">Disadvantages</p>
+      <ul>
+
+        <li>Time complexity of O(n^2), making it slow for large data sets</li>
+        <li>Inefficient due to multiple passes through the data</li>
+        <li>Inefficient due to multiple passes through the data</li>
+        <li>Comparison operator limits efficiency in some cases</li>
+
+      </ul>
+
+    </div>
+  </div>
+
+  <div class="download" id="download-section">
+    <!-- <p>Click the button below to download the Java code:</p> -->
+    <span>
+    </span>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
